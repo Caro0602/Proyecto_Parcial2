@@ -1,0 +1,90 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[document]{ragged2e}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Equipo 5}
+\title{Reporte proyecto parcial 2}
+\begin{document}
+
+\date{29/10/2020}
+\maketitle 
+\section{Indice}
+
+\textbf{Indice                                              1}
+\\
+\textbf{Introduccion                                        1}
+\\
+
+\textbf{Descripcion del problema                            1}
+\\
+
+\textbf{Resultados                                          1}
+\\
+
+\textbf{Conclusion                                          3}
+
+
+
+\section{Introduccion}
+A lo largo del semestre, hemos estudiado diversa variedad de metodos numericos con los cuales se pueden resolver distintas problemáticas de la vida laboral y cotidiana, y hoy toca el turno de utilizar un metodo denominado 'Regresion lineal'
+
+El analisis por medio de la regresion lineal tiene como objetivo el modelar de forma matematica el comportamiento de variables de respuesta en funcion de una o mas variables independientes.
+
+Un ejemplo de esto seria, suponiendo que el rendimiento de un proceso quimico esta relacionado con la temperatura de operacion. Generando un modelo matematico es posible describir la relacion, por lo que el modelo seria bien utilizado en el proceso de prediccion y optimizacion, los cuales son los principales usos y aplicaciones de la regresion lineal.
+
+\section{Descripcion del problema}
+En una empresa cosmetiquera, se analiza el estado de las sustancias para detectar impurezas en su estado y estudiar que tan factible es el emplear estos compuestos.
+Se sospecha que en estos procesos quimicos hay una relacion lineal entre temperatura y el porcentaje de impureza.
+
+Nuestras variables a utilizar son temperatura en grados Celsius, que identificaremos con la letra 'x' y el porcentaje de impureza que se representara con la letra 'y'.
+
+Se utilizara software como MatLab para la comprobacion de nuestros procedimientos y EXcel para hacer los calculos pertinentes y la graficacion de nuestro metodo para una mejor visualizacion.
+
+\section{Resultados}
+Acontinuacion presentamos la metodologia utilizada para obtener los resultados que seran destacados en esta seccion.
+
+En primera instancia, se realizo una tabla de valores en excel, donde se dividieron los datos de las distintas pruebas, en el eje X contamos con la temperatura y en el eje Y contamos con el porcentaje de impureza:
+
+\includegraphics[scale=1]{D:/7mo Semestre/Metodos numericos/reporte1.PNG} 
+\centering 
+
+Seguido de este orden, presentamos las distintas iteraciones para conseguir las estimaciones de error y de nuestra Yi, ed igual forma adjuntamos como se va a estimar la varianza:
+\includegraphics[scale=1]{D:/7mo Semestre/Metodos numericos/reporte3.PNG} 
+\includegraphics[scale=1]{D:/7mo Semestre/Metodos numericos/reporte4.PNG} 
+
+A continuacion, se hizo la evaluacion para determinar la B0 y B1 de nuestra problematica, ademas presentaremos apoyo visual y un breve resumen de como se realiza esta evaluacion:
+
+\includegraphics[scale=0.4]{D:/7mo Semestre/Metodos numericos/reporte 2.PNG} 
+\\
+
+\includegraphics[scale=1]{D:/7mo Semestre/Metodos numericos/reporte5.PNG} 
+
+Continuando con el analisis, realizamos la graficacion de nuestros datos obtenidos para la visualizacion acertiva de estos y detectar el comportamiento que toma nuestro modelado y variable.
+\includegraphics[scale=0.8]{reporte6.PNG} 
+
+Despues de un extenso analisis, realizando hasta 10 observaciones o iteraciones, llegamos a predecir el porcentaje de impureza que se va a encontrar en nuestros compuestos quimicos, asi como tambien desglosamos la cantidad de residuos y residuos estandares, como se puede observar a continuacion:
+\\
+\includegraphics[scale=0.8]{reporte7.PNG} 
+
+\justify
+\section{Conclusion}
+
+Como ya o estuvimos mencionando, la regresion lineal simple tiene como objetivo el ajustar una recta a un conjunto de puntos en un plano, los cuales reciben el nombre de 'grafica de dispersion' que esta conformada por los datos de una muestra aleatoria
+Respecto al caso, hay ciertas ideas que debemos dejar en claro despues de haber estudiado el tema:
+
+A diferencia del analisis de correlacion, la RLS tiene como variable independiente X (la controlamos, es decir, no es aleatoria) y la variable Y es dependiente y aleatoria, con distribucion normal con media miu y/x y varianza elevada a la 2da potencia y es por esto que resulta mas practico el emplear esta debido a nuestro caso a estudiar.
+
+1) El coeficiente de determinacion indica que la variabilidad de los datos es poca, siguen una tendencia, se ajustan muy bien a la linea recta y esto indica que es una muy buena relacion lineal.
+
+2) Con un NS se rechaza la H0, es decir la pendiente poblacional de la temperatura respecto al porcentaje de impureza si es diferente a 0, hay relacion lineal entre estas dos variables 
+
+3) El coeficiente de determinacion indica que la variabilidad de los datos observados es poca siguen una tendencia se ajustan muy bien a la linea recta  es una muy buena y esto indica tambien que es una muy buena  relacion lineal.
+
+Para concluir, es importante resaltar que este proyecto ha sido de gran utilidad, principalmente para nuestros colegas Bioquimicos y Biotecnologos ya que pudieron observar la aplicacion en un caso extremadamente posible de un metodo numerico, detectando la importancia y eficacia de contar con estos conocimientos. 
+
+\end{document}
+
